@@ -1,0 +1,25 @@
+1. dualpriorityencoder.v
+
+	Module : dualpriorenc
+	- Input signals
+		# in - 12 bit signal for encoding
+	
+	- Output signnals
+		# first - 4 bit signal telling the first encoded priority signal number
+		# second - 4 bit signal telling the second encoded priority signal number
+		
+	- Intermediate signals
+		# prior - 4 bit signal storing the first encoded priority signal number (i.e. value of first)  
+		
+		
+	Module : priorencoder
+	-Input signals
+		# in - 12 bit signal for encoding
+		# prior - 4 bit signal telling which priority has been encoded. Zero means no priority encoded.
+		
+	-Output signals
+		# out - 4 bit signal telling the first priority encoded signal number
+		
+	-Intermediate signals
+		# inI - 12 bit signal, storing the modified value of in signal according to the value of prior signal. (the bit position of in signal pointed by prior is made zero)
+	
