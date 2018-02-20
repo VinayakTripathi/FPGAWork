@@ -37,3 +37,35 @@
 	- Intermediate signals
 		# OutR - 8 bit signal storing right shifted signal
 		# OutL - 8 bit signal storing right shifted signal
+		
+	Module : rotateright
+	- Input signals
+		# in - 8 bit signal on which shift has to be performed
+		# num - 3 bit signal, telling the amount of shift required
+		
+	- Output signals
+		# out - 8 bit signal storing the shifted result
+		
+	Module : rotateleft
+	- Input signals
+		# in - 8 bit signal on which shift has to be performed
+		# num - 3 bit signal, telling the amount of shift required
+		
+	- Output signals
+		# out - 8 bit signal storing the shifted result
+		
+	Module : reverse
+	- Input signals
+		# in - 8 bit signal to be reversed
+		
+	- Output signals	
+		# out - 8 bit signal storing the reversed output
+		
+	Module : rotateleft_rgt
+	- Input signals
+		# in - 8 bit signal on which shift has to be performed
+		# num - 3 bit signal, telling the amount of shift required
+		
+	- Output signals
+		# out - 8 bit signal storing the shifted result
+		
