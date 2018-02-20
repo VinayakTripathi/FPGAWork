@@ -23,3 +23,17 @@
 	-Intermediate signals
 		# inI - 12 bit signal, storing the modified value of in signal according to the value of prior signal. (the bit position of in signal pointed by prior is made zero)
 	
+2. modifiedbarrelshifter.v
+
+	Module : modified_barrel_shift
+	- Input signals
+		# In - 8 bit signal on which shift has to be performed
+		# Num - 3 bit signal, telling the amount of shift required
+		# LR - 1 bit signal telling whether to perform right or left shift. (0-right 1-left)
+		
+	- Output signals
+		# Out - 8 bit signal storing the shifted result
+		
+	- Intermediate signals
+		# OutR - 8 bit signal storing right shifted signal
+		# OutL - 8 bit signal storing right shifted signal
